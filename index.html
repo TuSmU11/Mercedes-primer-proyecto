@@ -1,56 +1,269 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Landing Page</title>
-  </head>
-  <body>
+    <meta name="description" content="Discover the latest Mercedes-Benz models: electric, hybrid, AMG and Maybach. Find your nearest dealer.">
+    <meta name="keywords" content="Mercedes-Benz, electric cars, Mercedes EQS, AMG GT, Maybach, Mercedes dealer">
+    <meta name="author" content="Mercedes-Benz">
+</head>
+<body>
     <header>
-      <h1>Landing Page</h1>
+     <div class="header" id="casa">
+            <div class="icon-box">
+              <img class="icon" src="./fotos/icon.jpg" alt="MercedesIcon">
+            </div>
+       <nav class="nav"> 
+         <ul class="nav-links">
+                 <li><a href="#cards">Electric</a></li>
+                 <li><a href="#maybach">Maybach</a></li>
+                 <li><a href="#accessories">Accesories</a></li>
+                 <li><a href="#stores">Store</a></li>
+                 <li><a href="#contact">Contact</a></li>   
+         </ul>
+       </nav>
+       <nav class="nav-actions">
+            <a href="/login" class="user-icon">
+    <img src="./fotos/usuario.jpg" alt="User account">
+            </a> 
+            <a href="/carrito" class="carrito">
+    <img src="./fotos/carrito.png" alt="Shopping cart">
+            </a>
+         <div class="menu-toggle">
+        <a href="/barras" class="mobile">
+            <img src="./fotos/barra-movil.png" alt="barra-movil" class="mobile-pic">
+        </a>
+         </div>
+    </nav>  
+     </div>
     </header>
     <main>
-      <section class="content">
-        <h2>Contenido Principal</h2>
-        <p>
-          Bienvenido a mi landing page. Aquí aprenderemos más sobre CSS position.
-        </p>
-        <button>Aprende más</button>
-      </section>
-      <aside class="sidebar">
-        <h3>Barra lateral</h3>
-        <ul>
-          <li>Enlace 1</li>
-          <li>Enlace 2</li>
-          <li>Enlace 3</li>
-          <li>Enlace 4</li>
-          <li>Enlace 5</li>
-          <li>Enlace 6</li>
-        </ul>
-      </aside>
-    </main>
-    <section class="features">
-      <h2>Características</h2>
-      <div class="feature">
-        <span>⚛️</span>
-        <p>Característica 1: Descripción breve.</p>
-        <button>Detalles</button>
-      </div>
-      <div class="feature">
-        <span>💿</span>
-        <p>Característica 2: Descripción breve.</p>
-        <button>Detalles</button>
-      </div>
-      <div class="feature">
-        <span>🧳</span>
-        <p>Característica 3: Descripción breve.</p>
-        <button>Detalles</button>
-      </div>
-    </section>
-    <footer>
-      <p>Powered by Rock the Code</p>
-    </footer>
-  </body>
-</html>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2> New Mercedes CLS</h2>
+                <p>The power in your hands</p>
+            </div>
+        </section>
+<!-- Carteles coches -->
+        <section id="cards">
 
+            <!-- Coche 1 -->
+            <article class="card-car electric-one">
+            <div class="title">
+                <h2>Electric</h2>
+                <h3>Mercedes E450 Cabriolet</h3>
+            </div> 
+            
+               <img src="./fotos/coche-uno.png" alt="Mercedes E450 Cabriolet" class="car-pics coche-uno">
+               <div class="buton-actions">
+                 <a href="https://www.mercedes-benz.es/passengercars/models/cabriolet-roadster.html" class="info">More info</a>
+             <!-- Colores -->
+              <div class="colors">
+                <button class="btn red"></button>
+                <button class="btn black"></button>
+                <button class="btn yellow"></button>
+                <button class="btn white"></button>
+             </div>
+            </div>   
+            </article>
+
+            <!-- Coche 2 -->
+            <article class="card-car hybrid-one">
+                <div class="title">
+                    <h2>Hybrid</h2>
+                    <h3>Mercedes EQS SUV</h3>
+            </div> 
+                <img src="./fotos/coche-dos.png" alt="Mercedes EQS SUV" class="car-pics coche-dos">
+               
+                <div class="buton-actions">
+               <a href="https://www.mercedes-benz.es/passengercars/models/suv.html" class="info">More info</a>
+                <!-- Colores -->
+                <div class="colors">
+                <button class="btn red"></button>
+                <button class="btn black"></button> 
+                <button class="btn yellow"></button>
+                <button class="btn white"></button>
+             </div> 
+            </div>
+            </article>
+
+            <!-- Coche 3 -->
+            <article class="card-car electric-two">
+               <div class="title">
+                <h2>Electric</h2>
+                <h3>Mercedes Benz G Class</h3>
+                </div>
+
+                <img src="./fotos/coche-tres.png" alt="Mercedes Benz G Class" class="car-pics coche-tres">
+                
+                <div class="buton-actions">
+                 <a href="https://www.mercedes-benz.es/passengercars/models/suv/g-class/overview.html" class="info">More info</a> 
+                <!-- Colores -->
+                <div class="colors"> 
+                <button class="btn red"></button>
+                <button class="btn black"></button> 
+                <button class="btn yellow"></button>
+                <button class="btn white"></button>
+            </div>
+             </div>
+            </article> 
+
+            <!-- Coche 4 -->
+            <article class="card-car hybrid-two">
+               <div class="title">
+                <h2>Hybrid</h2>
+                <h3>Mercedes AMG GT</h3>
+            </div>
+            
+                <img src="./fotos/coche-cuatro.png" alt="Mercedes AMG GT" class="car-pics coche-cuatro">
+                
+                <div class="buton-actions">
+                 <a href="https://www.mercedes-benz.es/passengercars/models/coupe/amg-gt-2-door/overview.html" class="info">More info</a>
+                <!-- Colores -->
+                <div class="colors">
+                <button class="btn red"></button>
+                <button class="btn black"></button>
+                <button class="btn yellow"></button>
+                <button class="btn white"></button>
+            </div>
+            </div>
+            </article> 
+         </section>
+         
+         <!-- Tiendas -->
+ <section id="stores">
+    <div class="title-store">
+        <h2>Find your nearest Mercedes dealer you.</h2>
+        <h3>Browse over 1000 dealers worldwide, and fine the one that best suits your situation.</h3>
+    </div>
+    <div class="hero-store">
+        <article class="store-text">
+            <h2 class="title-store-two">Discover your local Mercedes partner store</h2>
+               <a href="https://www.mercedes-benz.es/passengercars/mercedes-benz-cars/dealer-locator.html/" class="button-store">Find a partner store near you </a>
+        </article>
+    </div>
+     </section>
+
+     <!-- Accesorios -->
+     <section id="accessories">
+        <article class="acc-card">
+     <h2>Confort</h2>
+     <img src="./fotos/confort.jpg" alt="Example of confort">
+     <a href="/" class="acc-button">More info</a>
+        </article>
+        <article class="acc-card">
+            <h2>Technology</h2>
+            <img src="./fotos/technology.png" alt="Technologies">
+            <a href="/" class="acc-button">More info</a>
+        </article>
+        <article class="acc-card">
+            <h2>Accessories</h2>
+            <img src="./fotos/accesories.jpg" alt="Accessories">
+            <a href="/" class="acc-button">More info</a>
+        </article>
+
+
+        <article class="acc-card">
+            <h2>Safety</h2>
+            <img src="./fotos/safety.jpg" alt="Mercedes safety systems">
+            <a href="" class="acc-button">More info</a>
+        </article>
+     </section>
+     <section id="maybach" class="maybach-section">
+        <div class="may1">
+         <div class="maybach-hero">
+             
+         </div>
+        <div class="maybach-title">
+            <h2>Red as tentation</h2>
+            <p>Good design is what drives us, and we're proud to share that Mercedes-Maybach has already won the prestigious Best Design Award 2023, as judgdeg by the wordl's best product designers</p>
+        </div>
+    </div>
+   
+    <div class="may2">
+        <div class="maybach-texts">       
+             <h2>The Mercedes-Maybach wheel programme</h2>
+             <p>The exclusive Mercedes-Maybach wheel programme, e.g. with optional 53.3 cm (21") Maybach forged wheels in multi-spoke design</p>  
+             <a href="https://group.mercedes-benz.com/company/tradition/company-history/wheel-design.html">Learn More</a>
+        </div>
+        <img src="./fotos/Wheel.png" class="wheel-hero" alt="Maybach wheel">
+     </div> 
+    </section>
+    <section id="contact" class="contact">
+
+    <div class="contact-info">
+          <div class="contact-text"> 
+            <p>Ready to own the car of your dreams? Mercedes-Maybach are now available at our dealers by appointment only.</p>
+          </div>
+          <div class="contact-button">
+            <a href="https://www.mercedes-benz.es/passengercars/services/support-contact.html" class="contact-button">Contact Now</a>
+          </div>
+    </div>
+    
+    </section>
+        </main>
+        <footer>
+        <div class="footer-container">
+                <h2>Join The Power</h2>
+                <p>Sign up to our newsletter.</p>
+            
+            <div class="input-wrapper">
+               <input type="email" placeholder="Enter your email here">
+               <button>Subscribe    </button>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="privacy" >
+                <label for="privacy">By signing up, I agree to the <a href="https://www.veloretti.com/privacy-policy">privacy policy</a> of Veloretti.</label>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com"><img src="./fotos/face.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="./fotos/insta.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com"><img src="./fotos/tik.png" alt="TikTok"></a>
+                <a href="https://www.youtube.com"><img src="./fotos/yt.png" alt="YouTube"></a>
+                <a href="https://www.linkedin.com"><img src="./fotos/link.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="footer-menus">
+            <div class="menu footmenu">
+                <h2>Explorer</h2>
+                <ul>
+                    <li><a href="https://eu.nplusbikes.com/collections/electric-bikes">Electric bikes</a></li>
+                    <li><a href="https://eu.nplusbikes.com/collections/road-bikes">City bikes</a></li>
+                    <li><a href="https://eu.nplusbikes.com/collections/kids-bikes">Kids bikes</a></li>
+                    <li><a href="https://www.mercedes-benz.es/passengercars/buy/technical-accessoires-overview.html">Accesories</a></li>
+                    <li><a href="https://www.mercedesocasion.com/outlet-coches">Outlet</a></li>
+                    <li><a href="https://group.mercedes-benz.com/careers/about-us/locations/location-detail-page-5088.html">Insurance electric</a></li>
+                    <li><a href="https://shop-int.mercedesamgf1.com/pages/size-guide?srsltid=AfmBOoqJ7WQN1UAuyv2qrGHT4a1icCnX8UX4V4_wxJ0ktCxG6tM6RX60&size-guide-gender=mens&size-guide-category=tops">Size guide</a></li>
+                </ul>
+            </div>
+            <div class="about-foot footmenu">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="https://www.mercedes-benz.es/passengercars/brand.html">About Us</a></li>
+                    <li><a href="https://www.mercedes-benz.com/en/exclusive/mercedes-benz-magazine/">Journal</a></li>
+                    <li><a href="https://www.trustpilot.com/review/www.mercedes-benz.com">Reviews</a></li>
+                    <li><a href="https://media.mercedes-benz.com/en/presscontacts">Press</a></li>
+                    <li><a href="https://jobs.mercedes-benz.com/">Jobs</a></li>
+                </ul>
+            </div>
+            <div class="help footmenu">
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="https://www.mercedes-benz.com/en/your-request/">Contact</a></li>
+                    <li><a href="https://www.mercedes-benz.es/passengercars/services/faq.html?srsltid=AfmBOooq7BoR7hqQoLWJsfzVqqHkqb-32BXBNpECdgOACPG0ZOl9sq1m">FAQ</a></li>
+                    <li><a href="https://usedparts.mercedes-benz.es/envio-entrega-b2c/?srsltid=AfmBOoocb0zx_bEryLs222pUIlvcrCveTM9k1qbZg3Qg7BvcOnd5AA5U">Delivery</a></li>
+                    <li><a href="https://www.mercedes-benz.es/passengercars/services/manuals.html">Assembly & Manuals</a></li>
+                    <li><a href="https://group.mercedes-benz.com/technology/digitalisation/digital-services/mercedes-pay.html">Digital Payment</a></li>
+                    <li><a href="https://www.mercedes-benz.com/en/privacy-statement/">Privacy Statement</a></li>
+                    <li><a href="https://www.mercedes-benz.com/en/terms-and-conditions/">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        </footer>
+</body>
+</html>
